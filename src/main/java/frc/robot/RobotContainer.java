@@ -17,6 +17,7 @@ import frc.robot.commands.ShooterRotate;
 import frc.robot.commands.ShooterStop;
 import frc.robot.subsystems.Intake;
 import frc.robot.subsystems.Shooter;
+import frc.robot.subsystems.LimeLight;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -31,6 +32,8 @@ public class RobotContainer {
 //   private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem);
 private final Intake m_intake = new Intake();
 private final Shooter m_shooter = new Shooter();
+private final LimeLight m_limelight = new LimeLight();
+
 
 private final IntakeClose m_intakeClose = new IntakeClose(m_intake);
 private final IntakeOpen m_intakeOpen = new IntakeOpen(m_intake);

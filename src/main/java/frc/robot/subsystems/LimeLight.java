@@ -39,7 +39,7 @@ public class LimeLight extends SubsystemBase {
 
   @Override
   public void periodic() {
-    update();
+    logs();
   }
 
   public double getDistance(){
@@ -94,9 +94,5 @@ public class LimeLight extends SubsystemBase {
     SmartDashboard.putNumber("limelight_yOffset", getYOffset());
     SmartDashboard.putBoolean("limelight_isTarget", isTargetVisible());
     SmartDashboard.putNumber("limelight_DistanceToTarget", getDistance());
-  }
-
-  public void update(){
-    
   }
 }
