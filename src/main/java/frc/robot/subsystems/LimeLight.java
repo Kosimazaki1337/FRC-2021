@@ -39,7 +39,7 @@ public class LimeLight extends SubsystemBase {
 
   @Override
   public void periodic() {
-    logs();
+    update();
   }
 
   public double getDistance(){
@@ -95,4 +95,8 @@ public class LimeLight extends SubsystemBase {
     SmartDashboard.putBoolean("limelight_isTarget", isTargetVisible());
     SmartDashboard.putNumber("limelight_DistanceToTarget", getDistance());
   }
+
+public void update(){
+    logs();
+}
 }
