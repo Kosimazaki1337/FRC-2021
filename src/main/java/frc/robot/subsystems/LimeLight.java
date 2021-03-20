@@ -29,9 +29,9 @@ public class LimeLight extends SubsystemBase {
     mNetworkTable = NetworkTableInstance.getDefault().getTable("limelight");
 
     ledMode = mNetworkTable.getEntry("ledMode");
-    isTarget = mNetworkTable.getEntry("tv");
-    xOffset = mNetworkTable.getEntry("tx");
-    yOffset = mNetworkTable.getEntry("ty");
+    isTarget = mNetworkTable.getEntry("target_visible");
+    xOffset = mNetworkTable.getEntry("offset_x");
+    yOffset = mNetworkTable.getEntry("offset_y");
 
     pipeline = mNetworkTable.getEntry("pipeline");
     pipeline.setNumber(0);
